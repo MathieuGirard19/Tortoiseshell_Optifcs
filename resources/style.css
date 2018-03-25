@@ -1,4 +1,271 @@
 html {
   font-size: 18px;
   line-height: 1.4;
+  font: Helvetica;
+  color: white;
+}
+
+.logo {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.logo img {
+  height: 1.5rem;
+  display: inline;
+  margin-left: 2rem;
+  margin-right: 1rem;
+  position: relative;
+  top: 0.25rem;
+}
+
+.logo h2 {
+  display: inline;
+}
+
+.banner {
+  font-size: 1rem;
+  display: flex;
+  background-color: cadetblue;
+  width: 960px;
+  justify-content: space-between;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  top: 1rem;
+}
+
+nav h2 {
+  display: inline;
+  margin-right: 2rem;
+}
+
+nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  background-color: white;
+  display: flex;
+  width: 34rem;
+  margin: 10rem auto;
+  position: relative;
+  left: 13rem;
+  z-index: 2;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 1.5rem 5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.img {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+@media only screen and (max-width: 1024px){
+  .banner {
+    top: 0;
+    width: 100%;
+  }
+  .title {
+    margin-top: 5rem;
+    left: 0;
+    float: right;
+    margin-right: 2rem;
+    width: 24rem;
+  }
+  .title h1 {
+    font-size: 1.33rem;
+    margin: 0.75rem 4rem;
+  }
+  .logo h2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  nav h2{
+    display: none;
+  }
+  .hide {
+    display: inline;
+  }
+  .title {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 7rem;
+    margin-bottom: 0;
+  }
+  .img {
+    height: 17rem;
+    background-position: 20%;
+    margin-bottom: 0;
+  }
+  .title h1 {
+    margin: 1rem auto;
+  }
+  .company {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3.77rem;
+  }
+  .exams {
+    margin-bottom: 1.54rem;
+    margin-left: 6rem;
+  }
+  .fillings {
+    margin-bottom: 1.54rem;
+    margin-left: 6rem;
+  }
+}
+
+.company {
+  color: black;
+  display: flex;
+  width: 29rem;
+  margin: 3rem auto;
+}
+
+.exams {
+  display: flex;
+  flex-wrap: wrap;
+  width: 7rem;
+  height: 8rem;
+  margin-right: 6rem;
+}
+
+.exams img {
+  width: 3.5rem;
+  height: 4rem;
+  margin: 0 auto;
+}
+
+.exams h2 {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.fillings {
+  display: flex;
+  flex-wrap: wrap;
+  width: 5rem;
+  height: 8rem;
+  margin-right: 6rem;
+}
+
+.fillings img {
+  width: 5rem;
+  height: 2.5rem;
+  margin: 0 auto;
+}
+
+.fillings h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.delivery {
+  display: flex;
+  flex-wrap: wrap;
+  width: 5rem;
+  height: 8rem;
+}
+
+.delivery img {
+  width: 5rem;
+  height: 3rem;
+}
+
+.delivery h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.statement {
+  display: flex;
+  width: 75%;
+  margin: 0 auto 5rem auto;
+  justify-content: space-around;
+}
+
+.statement h2{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  width: 100%;
+}
+
+.statement h3 {
+  color: black;
+  font-weight: normal;
+  margin-top: 1rem;
+}
+
+.philosophy {
+  width: 35%;
+}
+
+.appointments {
+  width: 35%;
+}
+
+@media only screen and (max-width: 768px){
+  .statement {
+    width: 100%;
+    flex-direction: column;
+  }
+  .philosophy {
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .appointments {
+    width: 100%;
+  }
+  .statement h3 {
+    font-size: 0.77rem;
+  }
+  footer h2 {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+}
+
+footer {
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  margin: 4rem 1rem 4rem 4rem;
+  display: inline;
+  height: 1.5rem;
+}
+
+footer h2 {
 }
